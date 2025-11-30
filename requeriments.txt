@@ -1,0 +1,5 @@
+numpy>=1.24
+matplotlib>=3.7
+scipy>=1.11
+jupyter>=1.0
+papermill>=2.4
