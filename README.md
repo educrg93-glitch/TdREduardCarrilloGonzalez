@@ -23,8 +23,7 @@ TdR/
 ├── configuracio_estrelles.py       # Paràmetres per cada objecte
 ├── executar_parametritzat.py       # Script per processar totes les estrelles
 ├── analisi.ipynb                   # Notebook plantilla d'anàlisi
-├── requeriments.txt                # Dependències del projecte
-└── restore-deps.ps1                # Script d'instal·lació automàtica
+└── requeriments.txt                # Dependències del projecte
 ```
 
 ## Dependències
@@ -49,25 +48,13 @@ Si no tens Python instal·lat, descarrega'l des de:
 
 Durant la instal·lació a Windows, marca l'opció **"Add Python to PATH"**.
 
-### 2. Configuració de l'entorn virtual (Windows / PowerShell)
+### 2. Instal·lació de dependències (Windows / PowerShell)
 
-1. Crea i activa un entorn virtual:
+Crea un entorn virtual i instal·la les dependències:
 
 ```powershell
 python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-```
-
-2. Instal·la les dependències:
-
-```powershell
 python -m pip install -r requeriments.txt
-```
-
-**Alternativa automàtica**: Executa l'script inclòs que crea el venv i instal·la tot:
-
-```powershell
-.\restore-deps.ps1
 ```
 
 ## Ús
@@ -75,7 +62,7 @@ python -m pip install -r requeriments.txt
 ### Processar totes les estrelles automàticament
 
 ```powershell
-.\.venv\Scripts\python.exe executar_parametritzat.py
+python executar_parametritzat.py
 ```
 
 Aquest script processa el Sol i les 5 estrelles amb els paràmetres òptims definits a `configuracio_estrelles.py`, generant:
@@ -85,7 +72,7 @@ Aquest script processa el Sol i les 5 estrelles amb els paràmetres òptims defi
 ### Anàlisi interactiva amb Jupyter
 
 ```powershell
-.\.venv\Scripts\python.exe -m jupyter notebook analisi.ipynb
+python -m jupyter notebook analisi.ipynb
 ```
 
 Això obre el notebook plantilla on pots ajustar paràmetres manualment.
