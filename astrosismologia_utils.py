@@ -16,7 +16,6 @@ def load_data(path: str) -> Tuple[np.ndarray, np.ndarray]:
     """Carrega les dades de freqüència i amplitud des d'un fitxer CSV.
     
     Format esperat: columnes 'Frequencia' i 'Amplitud'
-    (utilitzar normalitzar_csvs.py per normalitzar noms de columnes)
     
     Paràmetres:
         path: Ruta al fitxer CSV
