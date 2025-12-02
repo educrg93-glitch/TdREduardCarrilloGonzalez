@@ -10,8 +10,9 @@ TdR/
 │   ├── sol.csv
 │   ├── estrellaA.csv
 │   ├── estrellaB.csv
+│   ├── estrellaC.csv
 │   ├── estrellaD.csv
-│   └── estrellasC.csv
+│   └── estrellaE.csv
 ├── output/                         # Resultats generats automàticament
 │   ├── notebooks/                  # Notebooks executats per cada objecte
 │   └── [estrella]/                 # CSVs amb resultats per cada estrella
@@ -77,7 +78,7 @@ python -m pip install -r requeriments.txt
 .\.venv\Scripts\python.exe executar_parametritzat.py
 ```
 
-Aquest script processa el Sol i les 4 estrelles amb els paràmetres òptims definits a `configuracio_estrelles.py`, generant:
+Aquest script processa el Sol i les 5 estrelles amb els paràmetres òptims definits a `configuracio_estrelles.py`, generant:
 - Notebooks executats a `output/notebooks/`
 - Resultats CSV a `output/[nom_estrella]/`
 

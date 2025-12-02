@@ -50,7 +50,7 @@ CONFIGURACIONS_ESTRELLES = {
         'exclude_near_zero': True
     },
     'estrellaC': {
-        'fitxer': 'dades/estrellasC.csv',
+        'fitxer': 'dades/estrellaC.csv',
         'freq_unit': 'microHz',
         'freq_range_min': 100.0,
         'freq_range_max': 150.0,
