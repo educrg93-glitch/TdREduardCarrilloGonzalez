@@ -76,6 +76,20 @@ CONFIGURACIONS_ESTRELLES = {
         'descripcio': 'Estrella D - Espectre en µHz',
         'calcular_autocorrelacio': True,
         'exclude_near_zero': True
+    },
+    'estrellaE': {
+        'fitxer': 'dades/estrellaE.csv',
+        'freq_unit': 'mHz',
+        'freq_range_min': 1.0,
+        'freq_range_max': 2.5,
+        'prominence': 0.5,
+        'distance': 2,
+        'num_peaks': 300,
+        'bin_width': 0.01,
+        'output_dir': 'output/estrellaE',
+        'descripcio': 'Estrella E - Espectre en mHz',
+        'calcular_autocorrelacio': True,
+        'exclude_near_zero': True
     }
 }
 
